@@ -15,12 +15,13 @@ My curated list of awesome links, resources and tools
     - [Malware Analysis](#malware-analysis)
     - [Reverse Engineering](#reverse-engineering)
     - [Tutorials](#tutorials)
+    - [Web Application Security](#web-application-security)
 - [Tools](#tools)
 	- [AWS Security](#aws-security)
     - [Binary Analysis](#binary-analysis)
     - [Cryptography](#cryptography)
     - [Data Exfiltration](#data-exfiltration)
-    - [Digital Forensics and Incident Response](#digital-forensics-and-incident-response)
+    - [Digital Forensics and Incident Response](#digital-forensics-and-incident-response-1)
     - [Exploits](#exploits)
     - [Malware Analysis](#malware-analysis-1)
     - [Mobile Securtiy](#mobile-security)
@@ -29,7 +30,7 @@ My curated list of awesome links, resources and tools
     - [Privacy](#privacy)
     - [Social Engineering](#social-engineering)
     - [Vulnerable](#vulnerable)
-    - [Web Application Security](#web-application-security)
+    - [Web Application Security](#web-application-security-1)
     - [Windows](#windows)
 
 ---
@@ -58,10 +59,22 @@ My curated list of awesome links, resources and tools
 
 - [Beyond good ol' Run key Series](http://www.hexacorn.com/blog/?s=Beyond+good+ol%E2%80%99+Run+key%2C)
 	- Mirror copy and TLDR version of articles are available at [files/dfir/beyod-good-ol-run-key.md](files/dfir/beyond-good-ol-run-key.md)
+- [Certificate Chain Cloning and Cloned Root Trust Attacks](https://posts.specterops.io/code-signing-certificate-cloning-attacks-and-defenses-6f98657fc6ec)
+    - Mirror copy (TLDR version) of the article is available at [files/dfir/rouge-certificate-dfir.md](files/dfir/rouge-certificate-dfir.md)
 - [Windows Privileged Access Reference](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material#ATLT_BM)
 	- Mirror copy of the table is available at [files/dfir/windows-privileged-access-reference.md](files/dfir/windows-privileged-access-reference.md)
 
 ### Exploitation
+
+- [Guest Diary (Etay Nir) Kernel Hooking Basics](https://isc.sans.edu/forums/diary/Guest+Diary+Etay+Nir+Kernel+Hooking+Basics/23155/)
+
+#### Platforms
+
+##### ARM Exploitation
+
+- [ARM exploitation for IoT – Episode 1](https://quequero.org/2017/07/arm-exploitation-iot-episode-1/)
+- [ARM exploitation for IoT – Episode 2](https://quequero.org/2017/09/arm-exploitation-iot-episode-2/)
+- [ARM exploitation for IoT – Episode 3](https://quequero.org/2017/11/arm-exploitation-iot-episode-3/)
 
 #### Software Exploitation
 
@@ -73,6 +86,7 @@ My curated list of awesome links, resources and tools
 - [CVE-2017-2636: exploit the race condition in the n_hdlc Linux kernel driver bypassing SMEP](https://a13xp0p0v.github.io/2017/03/24/CVE-2017-2636.html)
 - [Dirty COW and why lying is bad even if you are the Linux kernel](https://chao-tic.github.io/blog/2017/05/24/dirty-cow)
 - [Enumeration for Linux Privilege Escalation](https://0x00sec.org/t/enumeration-for-linux-privilege-escalation/1959)
+- [Escaping Docker container using waitid() – CVE-2017-5123](https://www.twistlock.com/2017/12/27/escaping-docker-container-using-waitid-cve-2017-5123/)
 - [Exploit Dev 0x01 | 64-bit Linux Stack Buffer Overflow](http://badbytes.io/2017/02/15/exploit-dev-0x01-64-bit-linux-stack-buffer-overflow/)
 - [Exploiting the Linux kernel via packet sockets](https://googleprojectzero.blogspot.com/2017/05/exploiting-linux-kernel-via-packet.html)
 - [Kernel Exploitation | Dereferencing a NULL pointer!](https://0x00sec.org/t/kernel-exploitation-dereferencing-a-null-pointer/3850)
@@ -96,6 +110,7 @@ My curated list of awesome links, resources and tools
 - [Abusing GDI objects: Bitmap object’s size in the kernel pool](http://theevilbit.blogspot.com/2017/10/abusing-gdi-objects-bitmap-objects-size.html)
 - [A deeper look at ms11-058](https://blog.skullsecurity.org/2011/a-deeper-look-at-ms11-058)
 - [An Inside Look at CVE-2017-0199 – HTA and Scriptlet File Handler Vulnerability](https://blog.fortinet.com/2017/06/05/an-inside-look-at-cve-2017-0199-hta-and-scriptlet-file-handler-vulnerability)
+- [Analysis of CVE-2017-11882 Exploit in the Wild](https://researchcenter.paloaltonetworks.com/2017/12/unit42-analysis-of-cve-2017-11882-exploit-in-the-wild/)
 - [AtomBombing: Brand New Code Injection for Windows](https://breakingmalware.com/injection-techniques/atombombing-brand-new-code-injection-for-windows/)
 - [AtomBombing CFG Protected Processes](https://breakingmalware.com/injection-techniques/atombombing-cfg-protected-processes/)
 - [Breaking backwards compatibility: a 5 year old bug deep within Windows](http://www.triplefault.io/2017/07/breaking-backwards-compatibility-5-year.html)
@@ -141,6 +156,7 @@ My curated list of awesome links, resources and tools
 - [sam-b/windows_kernel_resources](https://github.com/sam-b/windows_kernel_resources)
 - [Sharks in the Pool :: Mixed Object Exploitation in the Windows Kernel Pool](http://srcincite.io/blog/2017/09/06/sharks-in-the-pool-mixed-object-exploitation-in-the-windows-kernel-pool.html)
 - [Signing Mimikatz](https://twitter.com/subTee/status/912769644473098240)
+- [Skeleton in the closet. MS Office vulnerability you didn’t know about](https://embedi.com/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about/)
 - [Starting with Windows Kernel Exploitation – part 1 – setting up the lab](https://hshrzd.wordpress.com/2017/05/28/starting-with-windows-kernel-exploitation-part-1-setting-up-the-lab/)
 - [Starting with Windows Kernel Exploitation – part 2 – getting familiar with HackSys Extreme Vulnerable Driver](https://hshrzd.wordpress.com/2017/06/05/starting-with-windows-kernel-exploitation-part-2/)
 - [Starting with Windows Kernel Exploitation – part 3 – stealing the Access Token](https://hshrzd.wordpress.com/2017/06/22/starting-with-windows-kernel-exploitation-part-3-stealing-the-access-token/)
@@ -168,16 +184,22 @@ My curated list of awesome links, resources and tools
 
 ##### Bypassing ASLR
 
+*Any related techniques for ASLR bypassing*
+
 - [Bypassing ASLR – Part I](https://sploitfun.wordpress.com/2015/05/08/bypassing-aslr-part-i/)
 - [Bypassing ASLR – Part II](https://sploitfun.wordpress.com/2015/05/08/bypassing-aslr-part-ii/)
 - [Bypassing ASLR – Part III](https://sploitfun.wordpress.com/2015/05/08/bypassing-aslr-part-iii/)
 
 ##### Format Strings
 
+*Format strings exploitation*
+
 - [Format String Exploitation Primer](https://borgandrew.blogspot.com/2017/01/h1-margin-bottom-0.html)
 - [X86 EXPLOITATION 101: “FORMAT STRINGS” – I’LL TELL YA WHAT TO SAY](https://gbmaster.wordpress.com/2015/12/08/x86-exploitation-101-format-strings-ill-tell-ya-what-to-say/)
 
 ##### Heap Exploitation
+
+*Heap exploitation related articles and tutorials*
 
 - [Heap Exploitation](https://www.gitbook.com/book/dhavalkapil/heap-exploitation/details)
 - [Heap Exploitation ~ Fastbin Attack](https://0x00sec.org/t/heap-exploitation-fastbin-attack/3627)
@@ -194,10 +216,14 @@ My curated list of awesome links, resources and tools
 
 ##### Integer Overflow
 
+*Integer overflow epxloitaion*
+
 - [Integer Overflow](https://sploitfun.wordpress.com/2015/06/23/integer-overflow/)
 - [X86 EXPLOITATION 101: “INTEGER OVERFLOW” – ADDING ONE MORE… AAAAAAAAAAAND IT’S GONE](https://gbmaster.wordpress.com/2015/08/13/x86-exploitation-101-integer-overflow-adding-one-more-aaaaaaaaaaand-its-gone/)
 
 ##### Return Oriented Programming
+
+*ROP cases and guidelines*
 
 - [A ROP Primer solution 64-bit style](https://blog.techorganic.com/2015/10/09/a-rop-primer-solution-64-bit-style/)
 - [Blind Return Oriented Programming 102](https://oddcoder.com/BROP-102/)
@@ -210,15 +236,28 @@ My curated list of awesome links, resources and tools
 
 ##### return-to-libc
 
+*return-to-libc techniques*
+
 - [Bypassing NX bit using return-to-libc](https://sploitfun.wordpress.com/2015/05/08/bypassing-nx-bit-using-return-to-libc/)
 - [Bypassing NX bit using chained return-to-libc](https://sploitfun.wordpress.com/2015/05/08/bypassing-nx-bit-using-chained-return-to-libc/)
 
+#### Shellcoding
+
+*Art of crafting shellcode*
+
+- [SLAE: Bind TCP Shell – Assignment 1](http://0xdeadcode.se/archives/637)
+- [SLAE: Reverse TCP Shell – Assignment 2](http://0xdeadcode.se/archives/689)
+- [SLAE: Egg Hunter – Assignment 3](http://0xdeadcode.se/archives/707)
+
 ##### Stack Exploitation
+
+*Corrupt the stack*
 
 - [Buffer Overflow Explotation](https://0x00sec.org/t/buffer-overflow-explotation/3846/1)
 - [Classic Stack Based Buffer Overflow](https://sploitfun.wordpress.com/2015/05/08/classic-stack-based-buffer-overflow/)
 - [Exploiting 1-byte buffer overflows](https://www.welivesecurity.com/2016/05/10/exploiting-1-byte-buffer-overflows/)
 - [PLAYING WITH CANARIES](https://www.elttam.com.au/blog/playing-with-canaries/)
+- [Simple buffer overflow on a modern system](http://liveoverflow.com/blog/stack0_buffer_overflow_on_ubuntu.html)
 - [Stack Clashing for Fun and Profit](http://nullprogram.com/blog/2017/06/21/)
 - [When is something overflowing](https://www.slideshare.net/PeterHlavaty/overflow-48573748)
 - [X86 EXPLOITATION 101: WHEN THE STACK GETS OVER ITS HEAD](https://gbmaster.wordpress.com/2014/06/18/x86-exploitation-101-when-the-stack-gets-over-its-head/)
@@ -226,12 +265,22 @@ My curated list of awesome links, resources and tools
 - [X86 EXPLOITATION 101: “HOUSE OF SPIRIT” – FRIENDLY STACK OVERFLOW](https://gbmaster.wordpress.com/2015/07/21/x86-exploitation-101-house-of-spirit-friendly-stack-overflow/)
 - [Your First Buffer Overflow](https://medium.com/@mackwage/your-first-buffer-overflow-89141a9a2941)
 
+
+##### Trusted Execution
+
+*Various techniques to execute malicious binary with trusted, bypassing security protection*
+
+- [Execute unsigned binary via signed Tracker.exe (required Tracker.exe and TrackerUI.dll)](https://twitter.com/sudhanshu_c/status/943011972261412864?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Eother)
+
 ##### Use-After-Free
+
+*Use-After-Free related arcitles*
 
 - [Use-After-Free](https://sploitfun.wordpress.com/2015/06/16/use-after-free/)
 
 ### Malware Analysis
 
+- [baderj/domain_generation_algorithms - Some results of my DGA reversing efforts](https://github.com/baderj/domain_generation_algorithms)
 - CCleaner's backdoor analysis
     - [Protecting the Software Supply Chain: Deep Insights into the CCleaner Backdoor](https://www.crowdstrike.com/blog/protecting-software-supply-chain-deep-insights-ccleaner-backdoor/)
     - [In-Depth Analysis of the CCleaner Backdoor Stage 2 Dropper and Its Payload](https://www.crowdstrike.com/blog/in-depth-analysis-of-the-ccleaner-backdoor-stage-2-dropper-and-its-payload/)
@@ -283,6 +332,8 @@ My curated list of awesome links, resources and tools
 - Poison Ivy
     - [Deep Analysis of New Poison Ivy Variant](http://blog.fortinet.com/2017/08/23/deep-analysis-of-new-poison-ivy-variant)
     - [Deep Analysis of New Poison Ivy/PlugX Variant - Part II](https://blog.fortinet.com/2017/09/15/deep-analysis-of-new-poison-ivy-plugx-variant-part-ii)
+- Rig EK
+    - [if you want to get #RigEK's enc key, please use this script](https://twitter.com/nao_sec/status/944038611590115328)
 - Trickbot
     - [Reverse engineering malware: TrickBot (part 1 - packer)](https://qmemcpy.github.io/post/reverse-engineering-malware-trickbot-part-1-packer)
     - [Reverse engineering malware: TrickBot (part 2 - loader)](https://qmemcpy.github.io/post/reverse-engineering-malware-trickbot-part-2-loader)
@@ -380,6 +431,14 @@ My curated list of awesome links, resources and tools
         </td>
     </tr>
     <tr>
+        <td>Mimikatz</td>
+        <td>
+            <ul>
+                <li><a href="https://adsecurity.org/?page_id=1821">Unofficial Guide to Mimikatz & Command Reference</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
         <td>osquery</td>
         <td>
             <ul>
@@ -428,6 +487,7 @@ My curated list of awesome links, resources and tools
                 <li><a href="http://blog.superponible.com/2017/04/15/emulating-assembly-in-radare2/">Emulating Assembly in Radare2</a></li>
                 <li><a href="https://github.com/chrysh/ctf_writeups/tree/master/pwnable.kr">Pwnable.kr - Passcode</a></li>
                 <li><a href="https://monosource.github.io/2016/10/radare2-peda">radare2 as an alternative to gdb-peda</a></li>
+                <li><a href="https://medium.com/@jacob16682/reverse-engineering-using-radare2-588775ea38d5">Reverse Engineering Using Radare2</a></li>
             </ul>
         </td>
     </tr>
@@ -458,6 +518,17 @@ My curated list of awesome links, resources and tools
         </td>
     </tr>
 </table>
+
+## Web Application Security
+
+*Web application security related articles and tutorials*
+
+- [Gaining access for HTTPS certificate by abusing RFC2142.](https://twitter.com/spazef0rze/status/942800411941048320)
+    - Using `admin@`, `administrator@`, `hostmaster@`, `postmaster@`, `webmaster@` for email address
+
+### SQL Injection
+
+- [NetSPI SQL Injection Wiki](https://sqlwiki.netspi.com/)
 
 ## Tools
 
@@ -506,6 +577,10 @@ My curated list of awesome links, resources and tools
             Tool for AWS security assessment, auditing and hardening. It follows guidelines of the CIS Amazon Web Services Foundations Benchmark.
         </td>
     </tr>
+    <tr>
+        <td><a href="https://github.com/SecurityFTW/cs-suite">SecurityFTW/cs-suite</a></td>
+        <td>Cloud Security Suite - One stop tool for auditing the security posture of AWS infrastructure.</td>
+    </tr>
 </table>
 
 ### Binary Analysis
@@ -530,8 +605,16 @@ My curated list of awesome links, resources and tools
         </td>
     </tr>
     <tr>
+        <td><a href="https://github.com/hasherezade/hook_finder">hasherezade/hook_finder</a></td>
+        <td>a small tool for investigating inline hooks (and other in-memory code patches)</td>
+    </tr>
+    <tr>
         <td><a href="https://lief.quarkslab.com/">LIEF</a></td>
         <td>Library to Instrument Executable Formats</td>
+    </tr>
+    <tr>
+        <td><a href="https://salmanarif.bitbucket.io/visual/index.html">VisUAL</a></td>
+        <td>A highly visual ARM emulator</td>
     </tr>
     <tr>
         <td>
@@ -724,8 +807,33 @@ My curated list of awesome links, resources and tools
             </td>
     </tr>
     <tr>
+        <td>CVE-2017-15944</td>
+        <td>Palo Alto Networks PAN-OS before 6.1.19, 7.0.x before 7.0.19, 7.1.x before 7.1.14, and 8.0.x before 8.0.6 allows remote attackers to execute arbitrary code via vectors involving the management interface.
+            <ul>
+                <li><a href="http://seclists.org/fulldisclosure/2017/Dec/38">CVE-2017-15944: Palo Alto Networks firewalls remote root code execution</a></li>
+                <li><a href="http://seclists.org/fulldisclosure/2017/Dec/65">Exploit verification script</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>CVE-2017-17215</td>
+        <td>
+            <ul>
+                <li><a href="https://www.exploit-db.com/exploits/43414/">Huawei Router HG532 - Arbitrary Command Execution</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/FriendsOfPHP/security-advisories">FriendsOfPHP/security-advisories</a></td>
         <td>The PHP Security Advisories Database references known security vulnerabilities in various PHP projects and libraries. This database must not serve as the primary source of information for security issues, it is not authoritative for any referenced software, but it allows to centralize information for convenience and easy consumption.</td>
+    </tr>
+    <tr>
+        <td><a href="hasherezade/process_doppelganging">https://github.com/hasherezade/process_doppelganging</a></td>
+        <td>My implementation of enSilo's Process Doppelganging (PE injection technique)</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/gellin/TeamViewer_Permissions_Hook_V1"></a>gellin/TeamViewer_Permissions_Hook_V1</td>
+        <td>A proof of concept injectable C++ dll, that uses naked inline hooking and direct memory modification to change your TeamViewer permissions.</td>
     </tr>
     <tr>
         <td><a href="https://github.com/ScottyBauer/Android_Kernel_CVE_POCs">ScottyBauer/Android_Kernel_CVE_POCs</a></td>
@@ -822,6 +930,10 @@ My curated list of awesome links, resources and tools
         <td><a href="https://malware.sekoia.fr/new">SEKOIA Dropper Analysis</a></td>
         <td>SEKOIA Dropper Analysis</td>
     </tr>
+    <tr>
+        <td><a href="https://pan-unit42.github.io/playbook_viewer/">UNIT 42: Playbook Viewver</a></td>
+        <td>Viewing PAN Unit 42's adversary playbook via web interface</td>
+    </tr>
 </table>
 
 ### Mobile Security
@@ -906,6 +1018,14 @@ My curated list of awesome links, resources and tools
     </tr>
     <tr>
         <td colspan="2"><b>IDA Pro</b></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/airbus-seclab/bincat">airbus-seclab/bincat</a></td>
+        <td>Binary code static analyser, with IDA integration. Performs value and taint analysis, type reconstruction.</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/fireeye/SimplifyGraph">fireeye/SimplifyGraph</a></td>
+        <td>IDA Pro plugin to assist with complex graphs</td>
     </tr>
     <tr>
         <td><a href="https://github.com/gaasedelen/lighthouse">gaasedelen/lighthouse</a></td>
@@ -1019,6 +1139,10 @@ My curated list of awesome links, resources and tools
         <td>Vagrant & Packer scripts to build a lab environment complete with security tooling and logging best practices</td>
     </tr>
     <tr>
+        <td><a href="https://github.com/mitre/caldera">mitre/caldera</a></td>
+        <td>The CALDERA automated adversary emulation system</td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/cliffe/SecGen">cliffe/SecGen</a></td>
         <td>SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques.</td>
     </tr>
@@ -1085,8 +1209,16 @@ My curated list of awesome links, resources and tools
         <td>Injects C# EXE or DLL Assembly into every CLR runtime and AppDomain of another process.</td>
     </tr>
     <tr>
+        <td><a href="https://live.sysinternals.com/">Live Sysinternals Tools</a></td>
+        <td>Live version of Sysinternal Suites</td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/sevagas/macro_pack">sevagas/macro_pack</a></td>
         <td>macro_pack is a tool used to automatize obfuscation and generation of MS Office documents for pentest, demo, and social engineering assessments. The goal of macro_pack is to simplify antimalware bypass and automatize the process from vba generation to final Office document generation.</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/peewpw/Invoke-PSImage">peewpw/Invoke-PSImage</a></td>
+        <td>Embeds a PowerShell script in the pixels of a PNG file and generates a oneliner to execute</td>
     </tr>
     <tr>
         <td><a href="https://github.com/peewpw/Invoke-WCMDump">peewpw/Invoke-WCMDump</a></td>
